@@ -9,7 +9,7 @@
 package svc
 
 import (
-	"code.google.com/p/winsvc/winapi"
+	"github.com/IMQS/gowinsvc/winapi"
 	"errors"
 	"runtime"
 	"syscall"
