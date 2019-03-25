@@ -7,9 +7,9 @@
 package main
 
 import (
-	"code.google.com/p/winsvc/debug"
-	"code.google.com/p/winsvc/eventlog"
-	"code.google.com/p/winsvc/svc"
+	"github.com/IMQS/gowinsvc/debug"
+	"github.com/IMQS/gowinsvc/eventlog"
+	"github.com/IMQS/gowinsvc/svc"
 	"fmt"
 	"time"
 )

@@ -7,8 +7,8 @@
 package eventlog
 
 import (
-	"code.google.com/p/winsvc/registry"
-	"code.google.com/p/winsvc/winapi"
+	"github.com/IMQS/gowinsvc/registry"
+	"github.com/IMQS/gowinsvc/winapi"
 	"errors"
 	"syscall"
 )

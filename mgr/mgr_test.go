@@ -7,7 +7,7 @@
 package mgr_test
 
 import (
-	"code.google.com/p/winsvc/mgr"
+	"github.com/IMQS/gowinsvc/mgr"
 	"os"
 	"path/filepath"
 	"testing"

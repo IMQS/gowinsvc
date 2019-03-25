@@ -7,8 +7,8 @@
 package main
 
 import (
-	"code.google.com/p/winsvc/eventlog"
-	"code.google.com/p/winsvc/mgr"
+	"github.com/IMQS/gowinsvc/eventlog"
+	"github.com/IMQS/gowinsvc/mgr"
 	"fmt"
 	"os"
 	"path/filepath"
