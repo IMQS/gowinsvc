@@ -2,15 +2,16 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+//go:build windows
 // +build windows
 
 package main
 
 import (
-	"code.google.com/p/winsvc/debug"
-	"code.google.com/p/winsvc/eventlog"
-	"code.google.com/p/winsvc/svc"
 	"fmt"
+	"github.com/IMQS/gowinsvc/debug"
+	"github.com/IMQS/gowinsvc/eventlog"
+	"github.com/IMQS/gowinsvc/svc"
 	"time"
 )
 

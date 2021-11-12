@@ -2,12 +2,13 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+//go:build windows
 // +build windows
 
 package mgr_test
 
 import (
-	"code.google.com/p/winsvc/mgr"
+	"github.com/IMQS/gowinsvc/mgr"
 	"os"
 	"path/filepath"
 	"testing"

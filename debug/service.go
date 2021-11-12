@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+//go:build windows
 // +build windows
 
 // Package debug provides facilities to execute svc.Handler on console.
@@ -9,7 +10,7 @@
 package debug
 
 import (
-	"code.google.com/p/winsvc/svc"
+	"github.com/IMQS/gowinsvc/svc"
 	"os"
 	"os/signal"
 	"syscall"

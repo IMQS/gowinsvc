@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+//go:build windows
 // +build windows
 
 // Example service program that beeps. It demonstrates how to
@@ -13,8 +14,8 @@
 package main
 
 import (
-	"code.google.com/p/winsvc/svc"
 	"fmt"
+	"github.com/IMQS/gowinsvc/svc"
 	"log"
 	"os"
 	"strings"
