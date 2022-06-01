@@ -4,7 +4,7 @@
 package service
 
 import (
-	"github.com/IMQS/gowinsvc/svc"
+	"golang.org/x/sys/windows/svc"
 	"log"
 )
 
@@ -42,12 +42,12 @@ loop:
 // Returns true if we detected that we are not running in a non-interactive session, and so
 // launched the service. This function will not return until the service exits.
 func RunAsService(handler func()) bool {
-	interactive, err := svc.IsAnInteractiveSession()
+	isService, err := svc.IsWindowsService()
 	if err != nil {
 		log.Fatalf("failed to determine if we are running in an interactive session: %v", err)
 		return false
 	}
-	if interactive {
+	if !isService {
 		return false
 	}
 
